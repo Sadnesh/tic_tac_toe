@@ -79,15 +79,7 @@ def diagonal(grid_box):
 
 
 def state_of(grid_box):
-    if horizontal(grid_box):
-        return True
-
-    if vertical(grid_box):
-        return True
-
-    if diagonal(grid_box):
-        return True
-    return False
+    return horizontal(grid_box) or vertical(grid_box) or diagonal(grid_box)
 
 
 def main():
